@@ -50,7 +50,8 @@ let agencyResource = {
   "hours": "Monday through Friday, 8:00am to 4:00pm. ",
   "phones": "Administrative (213) 488-9559, Service/Intake (213) 488-0031",
   "description": "The agency provides homeless support services and shelter for adults who have chronic mental illness and who are in Skid Row and downtown Los Angeles, including people who are undocumented or who have developmental disabilities or a dual diagnosis of mental illness and substance abuse.",
-  "groups": ["undocumented", "developmental disabilities", "dual diagnosis", "mental illness", "substance abuse"]
+  "groups": ["undocumented", "developmental disabilities", "dual diagnosis", "mental illness", "substance abuse"],
+  "beds openCount": "21"
 }
 
 // Dot notation in javascript
@@ -58,4 +59,10 @@ let agencyResource = {
 
 // Uses dot notation to get the property of the org_name key
 let organization = agencyResource.org_name;
-console.log(organization + " is open "+ agencyResource.hours );
+
+// Accessing properties in bracket notation
+// bracket notation is required if there are spaces in the property
+
+let bedsOpen = agencyResource["beds openCount"];
+
+console.log(organization + " is open "+ agencyResource.hours + " and currently there are " + bedsOpen + " beds open.");
