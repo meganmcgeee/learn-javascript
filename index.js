@@ -31,3 +31,24 @@ return count + " " + holdbet;
 }
 
 countCards("A")
+
+
+
+//Introduction to Javascript objects and different ways to get data from them  
+
+// Create agency resource object with properties that are information about agency 
+let agencyResource = {
+  "x": "-118.2467481",
+  "y": "34.04230597",
+  "cat1": "Social Services",
+  "cat2:" "Homeless Shelters and Services",
+  "org_name":	"Lamp Community - Frank Rice Access Center",
+  "addrln1": "627 San Julian St.",	
+  "addrln2": "",
+  "city": "Los Angeles",
+  "state": "CA",	
+  "hours": "Monday through Friday, 8:00am to 4:00pm. ",
+  "phones": "Administrative (213) 488-9559, Service/Intake (213) 488-0031",
+  "description": "The agency provides homeless support services and shelter for adults who have chronic mental illness and who are in Skid Row and downtown Los Angeles, including people who are undocumented or who have developmental disabilities or a dual diagnosis of mental illness and substance abuse." 
+  "groups": ["undocumented", "developmental disabilities", "dual diagnosis", "mental illness", "substance abuse"]
+}
