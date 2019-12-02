@@ -66,3 +66,9 @@ let organization = agencyResource.org_name;
 let bedsOpen = agencyResource["beds openCount"];
 
 console.log(organization + " is open "+ agencyResource.hours + " and currently there are " + bedsOpen + " beds open.");
+
+agencyResource.hours ="Monday through Friday, 8:00am to 6:00pm";
+
+console.log("Our hours have updated.");
+
+console.log(organization + " is now open "+ agencyResource.hours + " and currently there are " + bedsOpen + " beds open.");
