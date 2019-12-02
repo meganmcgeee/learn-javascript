@@ -1,3 +1,4 @@
+// Complex object manipulation
 
 let agencyResources =[ {
   "x": "-118.2467481",
@@ -13,7 +14,7 @@ let agencyResources =[ {
   "phones": {
     "Administrative": "(213) 488-9559", 
     "Service/Intake": "(213) 488-0031"
-  },
+  }
   "description": "The agency provides homeless support services and shelter for adults who have chronic mental illness and who are in Skid Row and downtown Los Angeles, including people who are undocumented or who have developmental disabilities or a dual diagnosis of mental illness and substance abuse.",
   "groups": ["undocumented", "developmental disabilities", "dual diagnosis", "mental illness", "substance abuse" ],
   "beds openCount": "21"
@@ -28,17 +29,17 @@ let agencyResources =[ {
   "addrln2": "",
   "city": "Whittier",
   "state": "CA",	
-  "hours": "",
+  "hours": ""
   "phones": {
     "Administrative": "(562) 945-3937",  
     "Service/Intake and Hotline": "(562) 945-3939 ext: 2460"
-  },
+  }
   "description": "The agency provides domestic violence services for low-income victims of intimate partner domestic violence and their children from all areas of Los Angeles County.",
   "groups": ["domestic violence", "children", "victims of domestic violence"],
   "beds openCount": "0"
 }
 
 ]
-
-let groupsServed = agencyResources[1].groups[0];
+// Reaches into second agency resouce element and gets the first group listed in the group property
+let groupsServed = agencyResources[1].groups[1];
 console.log(groupsServed)
