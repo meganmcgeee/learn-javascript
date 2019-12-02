@@ -72,3 +72,14 @@ agencyResource.hours ="Monday through Friday, 8:00am to 6:00pm";
 console.log("Our hours have updated.");
 
 console.log(organization + " is now open "+ agencyResource.hours + " and currently there are " + bedsOpen + " beds open.");
+
+// Check if an object has a property!
+
+function checkResource (checkProp){
+  if (agencyResource.hasOwnProperty(checkProp)){
+    return agencyResource[checkProp]
+  } else {
+    return "Not Found"
+  }
+}
+console.log(checkResource("addrln1"))
